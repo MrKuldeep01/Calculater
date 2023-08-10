@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="web icon" href="/icon.PNG">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container flex-center">
+        <h3 id="head3">🤙📱 Calculator 📱🤙</h3>
+        <div id="items" class="flex-center">
+           <label for="input">enter to calculate:</label>
+            <input type="text" id="input" onkeyup="run()">
+           <label for="output">result:</label>
+           <input type="text" id="output" contenteditable="false">
+            <!-- <p id="output"></p> -->
+
+        </div>
+    </div>
+    <script>
+        function run(){
+        let input = document.getElementById("input");
+        let output = document.getElementById("output");
+        output.innerHTML = eval(input.value);
+        }
+    </script>
+</body>
+
+</html>
