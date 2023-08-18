@@ -24,7 +24,7 @@
     width: 60%;
     height: 70%;
     /* flex-direction: column; */
-    border-radius:30px;
+    border-radius:5px;
     background:linear-gradient(10deg,rgb(209, 240, 255),rgb(254, 217, 245));
 }
 
@@ -42,7 +42,7 @@
     
 }
 #input{
-  
+  height: 20%;
 }
 #output{
     height: 20%;
@@ -55,4 +55,16 @@ label{
     margin:20px 0px 10px 0px;
 
 
+}
+
+#footer{
+ width:100%;
+height:50px;
+ 
+}
+#myname{
+ font-size:16px;
+ font-weight:bold;
+ color: white;
+ backdrop-filter:blur(3px);
 }
